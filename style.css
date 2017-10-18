@@ -3,14 +3,6 @@
   Helvetica,Arial,"Microsoft Yahei",
   "Hiragino Sans GB","Heiti SC",
   "WenQuanYi Micro Hei",sans-serif; }
-  @font-face {
-    font-family: 'iconfont';  /* project id 444564 */
-    src: url('http://at.alicdn.com/t/font_444564_kgzekjadmzrara4i.eot');
-    src: url('http://at.alicdn.com/t/font_444564_kgzekjadmzrara4i.eot?#iefix') format('embedded-opentype'),
-    url('http://at.alicdn.com/t/font_444564_kgzekjadmzrara4i.woff') format('woff'),
-    url('http://at.alicdn.com/t/font_444564_kgzekjadmzrara4i.ttf') format('truetype'),
-    url('http://at.alicdn.com/t/font_444564_kgzekjadmzrara4i.svg#iconfont') format('svg');
-  }
   .iconfont {
     font-family:"iconfont";
     font-size:18px;

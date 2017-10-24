@@ -10,18 +10,22 @@
 }
 a{text-decoration: none;}
 li{list-style-type: none;}
+body{
+    min-width: 1226px;
+}
 .header{
-    width: 1347px;
     height: 40px;
     background-color:#333;
-    display: flex;
-    overflow: hidden;
 }
-.header .nav1{margin-left:62px ;
-              width:700px;
-              height: 40px;
+.header .nav{
+    width: 1226px;
+    margin: 0 auto; 
+    display: flex; 
     }
-    .header .nav1 li{display:inline-flex;
+    .header .nav1 ul{
+        display: flex;
+    }
+    .header .nav1 ul li{
         color: rgb(85, 84, 84);
         font-size: 12px;
         line-height: 40px;
@@ -34,11 +38,11 @@ li{list-style-type: none;}
     margin-right: 5px;
 }
     .header .nav1 li a:hover{color: #fff;}
-.header .nav2{width: 349px;
+.header .nav2{
     height: 40px;
     position: relative;
-    left: 253px;
-
+    margin-left: 376px;
+    display: flex;
 }
     .header .nav2 li{display: inline-flex;
         color: rgb(85, 84, 84);
@@ -56,16 +60,15 @@ li{list-style-type: none;}
                 color: #fff;
             }
     .header .shopcar a{
+        display: block;
         width: 121px;
         height: 40px;
         font-size: 12px;
         color: #b0b0b0;
         text-align: center;
         background-color: #424242;
-        position: absolute;
-        right: 70px;
-        top: 0px;
         line-height: 40px;
+        margin-left: 25px;
     }
     .header .shopcar_text{
         width:320px;
@@ -83,27 +86,27 @@ li{list-style-type: none;}
         background-color: #fff;
         color:#ff6700;
     }
-.main .main1{
-    height: 1211px;
+.main1{
+    width: 1226px;
+    margin: 0 auto;
 }
 .main .main_nav{
-    width:1226px;
     height: 100px;
     display: flex;
     position: relative;
-    left: 62px;
 }
 .main .main_nav img{
     margin-top:22px;  
 }
 .main .main_nav .navcontent{
+    margin-left: 180px;
     text-align: center;
     line-height: 100px;
-    position: relative;
-    left: 172px;
+}
+.main .main_nav .navcontent ul{
+    display: flex;
 }
 .main .main_nav .navcontent li{
-    display: inline-flex;
     margin: 0px 9px;
 }
 .main .main_nav .navcontent a{
@@ -118,9 +121,7 @@ li{list-style-type: none;}
     position: absolute;
     right: 0px;
     top: 25px;
-    
 }
-
 .main .main_nav .search .text{
     width: 248px;
     height: 48px;
@@ -173,8 +174,7 @@ li{list-style-type: none;}
     display: flex;
     width: 1226px;
     height: 460px;
-    position: absolute;
-    left: 62px;
+    position: relative;
     background-image: url(https://i1.mifile.cn/a4/xmad_1507641447221_vpFDP.jpg);
 }
 .main .menu .menu_left{
@@ -256,11 +256,9 @@ li{list-style-type: none;}
     background-position: -42px 50%;
 }
 .main .content1{
-    width: 1226px;
     height: 172px;
-    position: absolute;
-    left: 62px;
-    top: 616px;
+    position: relative;
+    top: 15px;
     display: flex;
     justify-content: space-between;
 }
@@ -304,11 +302,10 @@ li{list-style-type: none;}
 }
 /*------------------------小米明星产品开始----------------*/
 .main .content2{
-    width: 1226px;
     height: 412px;
-    position: absolute;
-    left: 62px;
-    top: 814px;
+    position: relative;
+    top: 30px;
+    margin-bottom: 60px;
 }
 .main .content2 .content2_top{
     height: 58px;
@@ -412,22 +409,21 @@ li{list-style-type: none;}
     text-align: center;
     font-size: 14px;
 }
-.main .main2{
-    height: 2916px;
-    background-color: #f5f5f5;
-    position: relative;
-}
 /*------------------------小米明星产品结束----------------*/
 /*----------------------------家电部分开始------------------- */
+.main .main2{
+    background-color: #f5f5f5;
+}
+.main .main2 .containter{
+    width: 1226px;
+    margin: 0 auto;
+}
      .main .main2 .jiadian{
-         width: 1226px;
          height: 674px;
-         position: absolute;
-         left: 62px;
-         top: 62px;
+         position: relative;
+         padding-top: 60px;
      }
      .main .main2 .jiadian .jiadian_top,.zhineng_top{
-         width: 1226px;
          height: 58px;
          display: flex;
      }
@@ -668,11 +664,9 @@ li{list-style-type: none;}
      }
     /*------------智能部分----------*/
      .main .main2 .zhineng{
-        width: 1226px;
         height: 674px;
-        position: absolute;
-        left: 62px;
-        top: 798px;
+        position: relative;
+        margin-top: 28px;
     }
     .main .main2 .zhineng .zhineng_bottom .aimg img{
         width: 234px;
@@ -696,9 +690,8 @@ li{list-style-type: none;}
     .main .main2 .reping{
         width: 1226px;
         height: 473px;
-        position: absolute;
-        left: 62px;
-        top: 1512px;
+        position: relative;
+        margin-top: 28px;
         text-align: justify;
     }
     .main .main2 .reping dt{
@@ -756,14 +749,11 @@ li{list-style-type: none;}
     }
     /*------------内容--------*/
     .main .main2 .neirong{
-        width: 1226px;
         height: 480px;
-        position: absolute;
-        left: 62px;
-        top: 2000px;
+        position: relative;
+        margin-top: 12px;
     }
     .main .main2 .neirong .ntitle{
-        width: 1226px;
         height: 58px;
     }
     .main .main2 .neirong .ntitle h3,.vtitle h3{
@@ -879,11 +869,9 @@ li{list-style-type: none;}
     }
     /*--------------视频部分---------*/
     .main .main2 .video{
-        width: 1226px;
-        height: 343px;
-        position: absolute;
-        left: 62px;
-        top: 2510px;
+        height: 400px;
+        position: relative;
+        margin-top: 20px;
     }
     .main .main2 .video .vtitle{
         height: 58px;
@@ -966,16 +954,14 @@ li{list-style-type: none;}
         height: 439px;
     }
     .footer .fcontent1{
+        width: 1226px;
         height: 80px;
-        position: relative;
+        margin: 0 auto;
     }
     .footer .fcontent1 ul{
         display: flex;
-        width: 1226px;
         height: 80px;
-        position: absolute;
         border-bottom: 1px solid #e0e0e0;
-        left: 62px;
         justify-content: space-between;
     }
     .footer .fcontent1 ul li{
@@ -984,7 +970,7 @@ li{list-style-type: none;}
         border-left: 1px solid #e0e0e0;
         margin-top: 30px;
     }
-    .footer .fcontent1 ul :first-child{
+    .footer .fcontent1 ul li:first-child{
         border: none;
     }
     .footer .fcontent1 ul li a{
@@ -1000,16 +986,15 @@ li{list-style-type: none;}
         top: 2px;
     }
     .footer .fcontent2{
-        width: 1345px;
+        width: 1226px;
         height: 192px;
-        position: relative;
+        display: flex;
+        margin: 0 auto;
     }
     .footer .fcontent2 .fcontent2_left{
         display: flex;
         width: 980px;
         height: 130px;
-        position: absolute;
-        left: 62px;
         border-right: 1px solid #e0e0e0;
         margin-top:27px;
     }
@@ -1033,8 +1018,7 @@ li{list-style-type: none;}
     .footer .fcontent2 .fcontent2_right{
         width: 240px;
         height: 192px;
-        position: absolute;
-        right: 60px;
+        position: relative;
     }
     .footer .fcontent2 .fcontent2_right p{
         text-align: center;
@@ -1069,7 +1053,6 @@ li{list-style-type: none;}
         color: #fff;
     }
     .footer .fcontent3{
-        width: 1345px;
         height: 165px;
         position: relative;
         background: #f4f4f4;
@@ -1077,10 +1060,10 @@ li{list-style-type: none;}
     .footer .fcontent3 .ftop{
         width: 1226px;
         height: 57px;
-        position: absolute;
-        left: 62px;
+        position: relative;
         top: 31px;
         display: flex;
+        margin: 0 auto;
     }
     .footer .fcontent3 .ftop1{
         width: 780px;
@@ -1109,7 +1092,6 @@ li{list-style-type: none;}
         margin-left: 7px;
     }
     .footer .fcontent3 .fbottom{
-        width: 1345px;
         height: 50px;
         position: absolute;
         bottom: 0px;
